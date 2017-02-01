@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+#Author:	John Coty Embry
+#Date:		01/31/2017
+#Comment:	This program can be ran in the terminal on a computer that has python installed. This program will do the following
+
 import turtle
 #TURTLE DOCUMENTATION: https://docs.python.org/2/library/turtle.html
- 
-	#Create a program that does the following:
 		#done 01/22/2017o Trap all input errors and respond with a helpful message
 		#
 		#done 01/22/2017o Ask the user if they choose to draw squares, rectangles, circles,
@@ -15,7 +17,7 @@ import turtle
 		#
 		#done 01/31/2017o Draw the shapes
 		#
-		#oWhen the user presses a key clear the graphics and give the user option to restart or
+		#done 01/31/2017oWhen the user presses a key clear the graphics and give the user option to restart or
 		#	quit the program.  
 	
 	#Please print some screenshots of your running program, as well as provide the source code. PyCharm does a very good job of printing nicely formatted Python source code. 
@@ -226,7 +228,7 @@ def drawTriangle( numberOfRows, numberOfColumns ):
 				x += 50
 				trianglesCreated = 0
 
-
+#here I will define the program
 def Program():
 	shapeToDraw = None
 	inputMessage = 'Would you like to draw some 1. squares, 2. rectangles, 3. circles, 4. triangles, or 5. 5-point stars? Enter a number and press enter: '
@@ -338,6 +340,8 @@ def Program():
 	elif shapeToDraw == 5:
 		drawFivePointStart(rows, columns)
 
+
+#now to actually run the program
 while(keepRunningFlag == True):
 	Program()
 
